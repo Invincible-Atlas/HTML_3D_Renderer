@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="jquery-3.7.1.min.js"></script>
     </head>
     <body>
-        <script src="script.js"></script>
-        <canvas width="400" height="400" id="canvas"></canvas>
+        
+        <canvas width="400" height="400" id="canvas" style="border: solid;"></canvas><br>
         <input type="range" min="0" max="180" value="90" class="slider" id="fov">
         <label for="fov">fov</label>
+        <br>
         <input type="range" min="0" max="360" value="0" class="slider" id="cxa">
         <label for="cxa">camera x angle</label>
         <input type="range" min="0" max="360" value="0" class="slider" id="cya">
         <label for="cya">camera y angle</label>
         <input type="range" min="0" max="360" value="0" class="slider" id="cza">
         <label for="cza">camera z angle</label>
+        <button  onclick="render()">render</button>
+        <p id="log">Move your mouse around.</p>
+        <script src="script.js"></script>
     </body>
 
 
